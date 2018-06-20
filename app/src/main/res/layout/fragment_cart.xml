@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total do Pedido: R$ " />
+
+        <ListView
+            android:id="@+id/lvCartView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPedido"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="10dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="55dp"
+            android:text="Finalizar Pedido" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
